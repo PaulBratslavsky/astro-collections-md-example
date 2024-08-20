@@ -1,0 +1,12 @@
+---
+import MainLayout from "@layouts/MainLayout.astro"
+const { title } = Astro.props;
+
+---
+
+<MainLayout title={title}>
+  <div class="container mx-auto px-4 w-3/4">
+    <a href="/blog">Back to blog</a>
+    <slot />
+  </div>
+</MainLayout>
